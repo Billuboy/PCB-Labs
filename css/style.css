@@ -1,0 +1,322 @@
+.root{
+    --primary_color: #4dc4ff;
+    --secondary_color: #4aa5f0;
+    --font_color: #323640;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--font_color);
+}
+
+ul{
+    align-items: center;
+    list-style: none;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background: #fff;
+    justify-content:space-between;
+    z-index: 1;
+}
+
+
+.navbar h1{
+    color: #4aa5f0;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.navbar span {
+    color: #4dc4ff;
+}
+
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li a{
+    margin: 0 1rem;
+    padding: 0.75rem;
+}
+.navbar ul li a:hover{
+    
+    background: #4aa5f0;
+    color: #fff;
+    border-radius:5px;   
+}
+
+.navbar ul li a:active{
+    background: #4aa5da;
+}
+
+.foot{
+    text-align: center;
+    padding: 2rem;
+    background: black;
+    color: #4dc4ff;
+    font-size: 1rem;
+}
+
+/* index */
+.show{
+    content: '';
+    background: #333 url('../img/lab.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.show #showcon{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+
+.show #showcon h1{
+    font-size: 4rem;
+    color: #4aa5f0;
+    padding: 1.5rem;
+}
+
+
+.show #showcon h1 span{
+    color: #4dc4ff;
+}
+
+.show #showcon a{
+    padding: 0.5rem;
+    margin: 1.5rem;
+    background-color: #4dc4ff;
+    border-radius: 10px;
+}
+
+.show #showcon a:hover{    
+    background-color: #4aa5f0;
+    color: #fff;
+
+}
+
+.head{
+    font-size: 2rem;
+    color: #4aa5f0;
+    text-align: center;
+    margin: 2rem;
+}
+
+.labs{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.laboption{
+    font-size: 2rem;
+    border: #e6e6e6 solid 1px;
+    margin: 3rem 10rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #4dc4ff;
+    font-weight: bold;
+    border-radius: 10px ;
+    box-shadow: 5px 5px 15px rgba(51,51,51,0.25);
+    transition: all 0.5s ease-in-out;
+}
+
+.laboption:hover{
+    background: #4dc4ff;
+    color: #e6e6e6;
+    transform: scale(1.2);
+}
+
+#most{
+    background: #4dc4ff;
+    color: #fff;
+    padding: 1rem;
+}
+ 
+#most h3{
+    color: #fff;
+}
+
+
+.mostviewed p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.mostviewed ul li{
+    display: flex;
+    padding: 0.5rem;
+}
+
+.mostviewed ul li i{
+    padding-right: 1rem;
+}
+
+
+
+/* about */
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    padding-left: 15rem;
+    color: #4aa5f0;
+}
+
+.about span{
+    color: #4dc4ff;
+}
+
+#aboutus{
+    display:flex;
+    justify-content: center;
+}
+
+#aboutus .about-text{
+    line-height: 2rem;
+    padding-left: 15rem;
+}
+
+#aboutus div{
+    flex: 1;
+}
+
+#aboutus #about-img{
+    background: url('../img/lab3.jpg') no-repeat center center/contain;
+    margin-right: 15rem;
+}
+
+#review{
+    background: url('../img/store.jpg') no-repeat center center/cover;
+    padding: 5rem 5rem 3rem 5rem;
+    margin-top: 2rem;
+}
+
+#review h3{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+}
+
+.reviewname{
+    text-align: center;
+    background: #be132fda;
+    margin: 1.5rem;
+    margin-bottom: 6rem;
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+/* contact */
+
+#contact{
+    margin-left: 25rem;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2rem 0rem ;
+    color: #4aa5f0;
+}
+
+#contact span{
+    color: #4dc4ff;
+}
+
+#contact p{
+    font-size: 1.2rem;
+    /* padding-bottom: 1rem; */
+}
+
+.contact-form{
+    font-size: 1.1rem;
+    margin: 1rem 0rem;
+}
+
+.contact-form label{
+    display: block;
+}
+
+.contact-form input, .contact-form textarea{
+    border: #333 1px solid;
+    border-radius: 5px;
+    width: 60%;
+    padding: 0.75rem;
+    margin-top: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline: none;
+    border-color: #4dc4ff;
+}
+
+#btn input{
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 0px;
+    border: 1px solid #e6e6e6;
+    padding: 0.75rem 1rem;
+    background: #4dc4ff;
+    margin-bottom: 2rem;
+}
+
+#btn input:hover{
+    background: #4aa5f0;
+    color: #fff;
+}
+
+#address{
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    background: #4aa5f0;
+}
+
+.contact-info{
+    flex: 1;
+    padding: 1rem;
+}
+
+.contact-info i { 
+    padding: 1rem;
+    font-size: 4rem;
+}
+
+.contact-info h4{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact-info p{
+    padding-top: 3rem;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/s.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <form action="process.php">
+        <div class="container">
+        <h1>Create Account</h1>
+        <div class="daughter">
+            <label for="User">User Name</label><br>
+            <input type="text" name="User" id="User" placeholder="Enter Your User Name">
+        </div>
+        <div class="daughter">
+            <label for="Email">Email</label><br>
+            <input type="email" name="Email" id="Email" placeholder="Enter Your Email">
+        </div>
+        <div class="daughter">
+            <label for="DOB">Date Of Birth</label><br>
+            <input type="date" name="DOB" id="DOB">
+        </div>
+        <div class="daughter">
+            <label for="Gender">Gender</label><br>
+            <select name="Gender" id="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="daughter">
+            <label for="Pass">Password</label><br>
+            <input type="password" name="Pass" id="Pass" placeholder="Enter Your Password">
+        </div>
+    </form>
+        <button>Register</button>
+        <div class="terms">
+            By clicking the Register button, you agree to our <a href="#">Terms</a> & <a href="#">Conditions</a>.
+
+
+        </div>
+        </div>
+        
+        <div id="foot">
+            <footer> Already have an account?<a href="#">Sign in</a></footer>
+        </div>   
+</body>
+</html>
